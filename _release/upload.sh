@@ -1,13 +1,12 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env bash
 
 # Grab application version
-VERSION=$(_release/bin/gdrive-osx-x64 version | awk 'NR==1 {print $2}')
+VERSION=$(_release/bin/gdrive-linux-x64 version | awk 'NR==1 {print $2}')
 
 declare -a filenames
 filenames=(
     "gdrive-osx-x64"
     "gdrive-osx-386"
-    "gdrive-osx-arm"
     "gdrive-linux-x64"
     "gdrive-linux-386"
     "gdrive-linux-rpi"
@@ -39,7 +38,6 @@ declare -A descriptions
 descriptions=(
     ["gdrive-osx-x64"]="OS X 64-bit"
     ["gdrive-osx-386"]="OS X 32-bit"
-    ["gdrive-osx-arm"]="OS X arm"
     ["gdrive-linux-x64"]="Linux 64-bit"
     ["gdrive-linux-386"]="Linux 32-bit"
     ["gdrive-linux-rpi"]="Linux Raspberry Pi"
