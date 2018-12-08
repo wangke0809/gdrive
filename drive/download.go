@@ -174,7 +174,7 @@ func (self *Drive) downloadBinary(f *drive.File, args DownloadArgs) (int64, int6
 	defer res.Body.Close()
 
 	if !args.Stdout {
-		fmt.Fprintf(args.Out, "Downloading %s -> %s\n", f.Name, fpath)
+		fmt.Fprintf(args.Out, "Downloaded %s -> %s\n", f.Name, fpath)
 	}
 
 	return self.saveFile(saveFileArgs{
