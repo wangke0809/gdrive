@@ -96,4 +96,3 @@ for name in ${filenames[@]}; do
     # Print row
     echo "$row"
 done
-hub release create "${VERSION}" $(echo ${filenames[@]} | sed 's/gdrive/-a _release\/bin\/gdrive/g')
