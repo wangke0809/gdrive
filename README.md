@@ -94,32 +94,32 @@ You will be prompted for a new verification code if the folder does not exist.
 ### Downloads
 | Filename               | Version | Description        | Shasum                                   |
 |:-----------------------|:--------|:-------------------|:-----------------------------------------|
-| [gdrive-osx-x64](https://drive.google.com/uc?id=1ndKhpVbqwg8mrhcHKMMrKk1PURLvkvY0&export=download) | 2.1.2 | OS X 64-bit | ccd87449a3cf4d0f68ec62f96f94bad378978b25 |
-| [gdrive-osx-386](https://drive.google.com/uc?id=1J2tgSlCjWq4ntf0jhkCy9NdqNmi7hYuH&export=download) | 2.1.2 | OS X 32-bit | 1778fc7faba0f8aa3fda2b22c22063995214b192 |
-| [gdrive-linux-x64](https://drive.google.com/uc?id=10NAVLG-cNSPcPC-g3E-RfMgFksxJnyZu&export=download) | 2.1.2 | Linux 64-bit | 45b6f01c02fb447eab4171af6eb4b3ee6fdbfb1e |
-| [gdrive-linux-386](https://drive.google.com/uc?id=19hGuRCAKQsZNP4Om4oaaHoJNnTJuOrDx&export=download) | 2.1.2 | Linux 32-bit | 2500d4916a1ea1072fb37fc6d3d415166294c49c |
-| [gdrive-linux-rpi](https://drive.google.com/uc?id=1fjO17aHhZyVKFv6HpxFHgIBwTmomGuKg&export=download) | 2.1.2 | Linux Raspberry Pi | 688cee3ab584e67e50ada0c686db61c34f6df246 |
-| [gdrive-linux-arm64](https://drive.google.com/uc?id=18hCQWxpyHufoZardFHWCB787O7UPubY7&export=download) | 2.1.2 | Linux arm 64-bit | 91433b566755f7a3e2a45c13ecc44547f40f99b7 |
-| [gdrive-linux-arm](https://drive.google.com/uc?id=1JXzGYCv1YNDMh0RD3k9bTlg78fZMRRD5&export=download) | 2.1.2 | Linux arm 32-bit | 688cee3ab584e67e50ada0c686db61c34f6df246 |
-| [gdrive-linux-mips64](https://drive.google.com/uc?id=1sK5CSAzxV91j_HotzS1k2PvQfTKFYZOf&export=download) | 2.1.2 | Linux mips 64-bit | 51845b3c0f913395a0d2d2052f54195200fcbe39 |
-| [gdrive-linux-mips64le](https://drive.google.com/uc?id=1rhzyxAN3kyxm_RNFkSNwNhQMgaYETD74&export=download) | 2.1.2 | Linux mips 64-bit le | b8b0e962b729dca1a80b926a9aef67e1ddbbd24f |
-| [gdrive-linux-ppc64](https://drive.google.com/uc?id=1tqVycLDwlWWkS9OStvOB1cGuc1wrIntw&export=download) | 2.1.2 | Linux PPC 64-bit | 5e1c5e94dedd820bbe70ec3e57d79b8cfd0c4520 |
-| [gdrive-linux-ppc64le](https://drive.google.com/uc?id=13X9QS4WXjXeG5PspVFmsgr333ysTcNzr&export=download) | 2.1.2 | Linux PPC 64-bit le | 6ce5b0cae7a93f329f9046517f3d59a1402be424 |
-| [gdrive-windows-386.exe](https://drive.google.com/uc?id=17lA7Cj5hnnIYZsb4hgJN6yFMRiU0BQGh&export=download) | 2.1.2 | Window 32-bit | 1ef77b89bd0f1229cd2ba3233082460d09b2a1c1 |
-| [gdrive-windows-x64.exe](https://drive.google.com/uc?id=1ywlzhxA3SBXCK7faiafj4KjGzX72Je-Z&export=download) | 2.1.2 | Windows 64-bit | ba6732d37c81fad829143f3e184e8c25def0ca02 |
-| [gdrive-dragonfly-x64](https://drive.google.com/uc?id=145SMqLyZCou9cLOpy4Q3vcsEAplvUCaZ&export=download) | 2.1.2 | DragonFly BSD 64-bit | 5248c9e0257960109ab153be66a2accfef3bbb95 |
-| [gdrive-freebsd-x64](https://drive.google.com/uc?id=1MHxOz7OjlNszs5YqAWB5u8RzZG5q05JZ&export=download) | 2.1.2 | FreeBSD 64-bit | a3a53077d32b1ea937bbf823e2bd7ce79375075d |
-| [gdrive-freebsd-386](https://drive.google.com/uc?id=1oti1xARGQ9j4Kb66cs4kg5DTupEgLh8k&export=download) | 2.1.2 | FreeBSD 32-bit | 0ece7eb3e18765ff4528902e1b0924f07c149d44 |
-| [gdrive-freebsd-arm](https://drive.google.com/uc?id=1j7ad_POIjN_5OZQJyUdOLTXXCPkb9sHq&export=download) | 2.1.2 | FreeBSD arm | 64fc8f37e0b8757e26f81302195dfbdc1cffc90b |
-| [gdrive-netbsd-x64](https://drive.google.com/uc?id=1FED-jn2TPAsb3e88CV_6u3OOLwxkSUze&export=download) | 2.1.2 | NetBSD 64-bit | 8df523f8a21c823f3f580c20d190baa68a8d682e |
-| [gdrive-netbsd-386](https://drive.google.com/uc?id=1ywWDlA-Q2K5xndFZVziOFDtq78O_5NGv&export=download) | 2.1.2 | NetBSD 32-bit | c048defdab863d97365bcd03e87913fde567e415 |
-| [gdrive-netbsd-arm](https://drive.google.com/uc?id=12v0TukbKvDtojPQEPe3JS2C2V60581hy&export=download) | 2.1.2 | NetBSD arm | f3ea9ea8b0e7107cce75ce3e78d84a171c3e1343 |
-| [gdrive-openbsd-x64](https://drive.google.com/uc?id=1pRlISUtWQZhCWC83vYXfgPNqSBdI6w9W&export=download) | 2.1.2 | OpenBSD 64-bit | 743305ccc82f297bed44989ad46194bd8b392cf7 |
-| [gdrive-openbsd-386](https://drive.google.com/uc?id=1UA-NpKuMZz_WlbFr8HwFkvnswUeklq_p&export=download) | 2.1.2 | OpenBSD 32-bit | 83a7f990e283ef62867d37c33cbf000be2d64f1e |
-| [gdrive-openbsd-arm](https://drive.google.com/uc?id=1Jyw2YW_c-nEQxkedO6XERk52OxupKa4E&export=download) | 2.1.2 | OpenBSD arm | 1cd8085da501b606b7ddd638337ba6b6e39c6317 |
-| [gdrive-solaris-x64](https://drive.google.com/uc?id=1XmLVM5tC9cJueRQvbCc_OeSKqKGRFnLH&export=download) | 2.1.2 | Solaris 64-bit | 9638356e6180226afbfc1b25629d462771b8aade |
-| [gdrive-plan9-x64](https://drive.google.com/uc?id=1oUWJ6Bw_ojccsXQBexCXMkp1FSlQvTFn&export=download) | 2.1.2 | Plan9 64-bit | 69850abee6618575f7978bfaccba0be5d59c1fc1 |
-| [gdrive-plan9-386](https://drive.google.com/uc?id=1DVJ1kAlkIU0tfq2Sg3lx_K7EY_svwq3q&export=download) | 2.1.2 | Plan9 32-bit | a01d658887ae59e21b5f7c8e43a0629f15e465cd |
+| [gdrive-osx-x64](https://drive.google.com/a/turbolearning.co.uk/uc?id=1Tguw_sde2arcZTIo9Iko96FdjaNxcmLm&export=download) | 2.1.3 | OS X 64-bit | 15c3701ae0dab0a6078ea2d66a37b38fd5febca1 |
+| [gdrive-osx-386](https://drive.google.com/a/turbolearning.co.uk/uc?id=1rOF9o6VgXumt1Dj-4cKJcT6Wearhbvkj&export=download) | 2.1.3 | OS X 32-bit | fdfbc6b9660cc4c6e02040cc2d0d1781e31393ba |
+| [gdrive-linux-x64](https://drive.google.com/a/turbolearning.co.uk/uc?id=152N6FBR8Gxev7z7JOGq0MWazGdaShlFD&export=download) | 2.1.3 | Linux 64-bit | 64ef5f443698170da465ec54e4ce011f0dd1b9df |
+| [gdrive-linux-386](https://drive.google.com/a/turbolearning.co.uk/uc?id=1clPcmLl4mWQIs4AzqNNgvk9g2-AF9X3m&export=download) | 2.1.3 | Linux 32-bit | 88043a2e54426f80319a2361060c2d47264ec2d0 |
+| [gdrive-linux-rpi](https://drive.google.com/a/turbolearning.co.uk/uc?id=1MpdQXky25T9bokOp1PeC1wwptKeFd9i_&export=download) | 2.1.3 | Linux Raspberry Pi | 67432e0d7f3fcebdafe5aa4d863b0f4868727fbc |
+| [gdrive-linux-arm64](https://drive.google.com/a/turbolearning.co.uk/uc?id=1WCsj2IBM5-uaBQMN-82nGoH46d_2teiR&export=download) | 2.1.3 | Linux arm 64-bit | 4a5a25b326e0abd6b6a7ef04a783e8a908bcb3ef |
+| [gdrive-linux-arm](https://drive.google.com/a/turbolearning.co.uk/uc?id=1ZrdCEzVAWJe1odkI8H-1kt8c8UFCoqc0&export=download) | 2.1.3 | Linux arm 32-bit | 67432e0d7f3fcebdafe5aa4d863b0f4868727fbc |
+| [gdrive-linux-mips64](https://drive.google.com/a/turbolearning.co.uk/uc?id=1w7XgB5A23xRJMYIBZ9umVaTp0zUyRGME&export=download) | 2.1.3 | Linux mips 64-bit | 7a5d44ed022c0d671ac1039e5dd896c190bf6e05 |
+| [gdrive-linux-mips64le](https://drive.google.com/a/turbolearning.co.uk/uc?id=13FD1ic75uvBII2vRRfslTjF2H66Z0TKO&export=download) | 2.1.3 | Linux mips 64-bit le | fd725eb9950d901f6c7ff64cdb5cc847ed80caf0 |
+| [gdrive-linux-ppc64](https://drive.google.com/a/turbolearning.co.uk/uc?id=1G1HYxpSIiZswJzorCtrYpGperA2TCdb2&export=download) | 2.1.3 | Linux PPC 64-bit | 83c22b78626c06d38002431587224af335f9e66f |
+| [gdrive-linux-ppc64le](https://drive.google.com/a/turbolearning.co.uk/uc?id=1L1qfE6ZoP_i0U5PuKZ9Qzmf8AhGykkcx&export=download) | 2.1.3 | Linux PPC 64-bit le | da839a7cee3c6fe950bb7e8521a8b04c3f17265b |
+| [gdrive-windows-386.exe](https://drive.google.com/a/turbolearning.co.uk/uc?id=1UfrbarwIEl2O_qGo7XlP52XMqsWU1qnz&export=download) | 2.1.3 | Window 32-bit | 281b1205d8f3456b9054cb590853b3e5ef1f8e0c |
+| [gdrive-windows-x64.exe](https://drive.google.com/a/turbolearning.co.uk/uc?id=1yInW5V40byu-MJkm6euHk2ba9dlihzup&export=download) | 2.1.3 | Windows 64-bit | 532a4d76b1a40d387b6745ba5ee25e8d7ca9b9eb |
+| [gdrive-dragonfly-x64](https://drive.google.com/a/turbolearning.co.uk/uc?id=1Yz8-vO_ism53QwRIuc35-nps0XGKGmhN&export=download) | 2.1.3 | DragonFly BSD 64-bit | 010638673ce5d118025ba0b52e5ed1dfc7fe0e5d |
+| [gdrive-freebsd-x64](https://drive.google.com/a/turbolearning.co.uk/uc?id=1HSAyPOabzAb6iy2axb_lOiSUUpnaVZAd&export=download) | 2.1.3 | FreeBSD 64-bit | e7720dd152ce03d112ea2dab5fe9b2cf8f483c89 |
+| [gdrive-freebsd-386](https://drive.google.com/a/turbolearning.co.uk/uc?id=1lImtbz23CA9GdrluZFBsRz172W8jI4ic&export=download) | 2.1.3 | FreeBSD 32-bit | dd92dddcbae7af694f76cf5328010c284f79fca9 |
+| [gdrive-freebsd-arm](https://drive.google.com/a/turbolearning.co.uk/uc?id=11UyZg0RDylJkVYfJba2ok5PS3mprSFOP&export=download) | 2.1.3 | FreeBSD arm | 60ea7e2507870d3042e1dc50b9202b8d5ff5ab28 |
+| [gdrive-netbsd-x64](https://drive.google.com/a/turbolearning.co.uk/uc?id=1wsUwxuXqviEB1teFireMKBToRnrQpXjI&export=download) | 2.1.3 | NetBSD 64-bit | 9a79b4a85b34ab027ed2db00cd898e57e997b31b |
+| [gdrive-netbsd-386](https://drive.google.com/a/turbolearning.co.uk/uc?id=13HWpq3SqCbn9Nlau0jwI0gUuvAEO3O-U&export=download) | 2.1.3 | NetBSD 32-bit | aff0841d000d1aaeb6955c0373aa968be7c227b6 |
+| [gdrive-netbsd-arm](https://drive.google.com/a/turbolearning.co.uk/uc?id=1hXDGb5JS332RTFcZCv3AEP9jvmno1UE6&export=download) | 2.1.3 | NetBSD arm | 48ea658779ad7ffa080f6ec6a27cbf84f9366a41 |
+| [gdrive-openbsd-x64](https://drive.google.com/a/turbolearning.co.uk/uc?id=13_HdPKprpgoEg1oMmMqc0gEbl-hVmWtl&export=download) | 2.1.3 | OpenBSD 64-bit | 5c9dcf7c0f58dcfbdd2da332241f94491b82ebef |
+| [gdrive-openbsd-386](https://drive.google.com/a/turbolearning.co.uk/uc?id=1BHelT7Sjgu1zoMYlda_OfD4lt8nC8Aqr&export=download) | 2.1.3 | OpenBSD 32-bit | 5b2b6d3750d4545e665dac3bd4cf48b511232c2f |
+| [gdrive-openbsd-arm](https://drive.google.com/a/turbolearning.co.uk/uc?id=1vV2J1nYG0XIjLxPLnUsP3E4ZfQXvWAa0&export=download) | 2.1.3 | OpenBSD arm | 67248241c482469d72e2abeca23611154aae5eae |
+| [gdrive-solaris-x64](https://drive.google.com/a/turbolearning.co.uk/uc?id=119KnxZFj7QyE-cqJCgAhITc_PX-jFBCj&export=download) | 2.1.3 | Solaris 64-bit | 69d5f1a6c646820a52491e5341db68a3b82896e7 |
+| [gdrive-plan9-x64](https://drive.google.com/a/turbolearning.co.uk/uc?id=1JM-EkbWklwWkQsRc1n9XHUPammVfv5-r&export=download) | 2.1.3 | Plan9 64-bit | 854481fad0fd04ea0c63339e727ec05d8b19e0c9 |
+| [gdrive-plan9-386](https://drive.google.com/a/turbolearning.co.uk/uc?id=1Gh47pBJb9wQl4Jt_Np45Rn8SPCAXI1BD&export=download) | 2.1.3 | Plan9 32-bit | feb37f7608f8a7b8b1f4ad2de6139b232db9cdd5 |
 
 ## Compile from source
 ```bash
