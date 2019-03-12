@@ -14,8 +14,8 @@ import (
 	"github.com/MSF-Jarvis/gdrive/drive"
 )
 
-const ClientId = "367116221053-7n0vf5akeru7on6o2fjinrecpdoe99eg.apps.googleusercontent.com"
-const ClientSecret = "1qsNodXNaWq1mQuBjUjmvhoO"
+const ClientId = "938898304514-pkqqerbrptq6nm7ou82sbe7e3nadf3km.apps.googleusercontent.com"
+const ClientSecret = "uRxjO9kW4MciBMCZEAhG2aNi"
 const TokenFilename = "token_v2.json"
 const DefaultCacheFileName = "file_cache.json"
 
