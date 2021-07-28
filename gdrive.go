@@ -8,7 +8,7 @@ import (
 )
 
 const Name = "gdrive"
-const Version = "3.0.2"
+const Version = "3.0.3"
 
 const DefaultMaxFiles = 30
 const DefaultMaxChanges = 100
