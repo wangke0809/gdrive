@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -18,6 +19,7 @@ var ClientId string
 var ClientSecret string
 
 const TokenFilename = "token_v2.json"
+const OauthCredentialsFilename = "oauthClient.json"
 const DefaultCacheFileName = "file_cache.json"
 
 func listHandler(ctx cli.Context) {
@@ -341,20 +343,52 @@ func aboutExportHandler(ctx cli.Context) {
 	checkErr(err)
 }
 
+func getOauthAppCredentials(credsPath string) (clientId, clientSecret string, err error) {
+	clientId = ClientId
+	clientSecret = ClientSecret
+	if _, err := os.Stat(credsPath); os.IsNotExist(err) {
+		return "", "", err
+	}
+	var oauthCredentials struct {
+		Installed struct {
+			ClientId     string `json:"client_id"`
+			ClientSecret string `json:"client_secret"`
+		} `json:"installed"`
+	}
+	content, err := ioutil.ReadFile(credsPath)
+	if err != nil {
+		return "", "", err
+	}
+	json.Unmarshal(content, &oauthCredentials)
+	clientId = oauthCredentials.Installed.ClientId
+	clientSecret = oauthCredentials.Installed.ClientSecret
+
+	return clientId, clientSecret, nil
+}
+
 func getOauthClient(args cli.Arguments) (*http.Client, error) {
+	configDir := getConfigDir(args)
+
+	credsPath := ConfigFilePath(configDir, OauthCredentialsFilename)
+	if args.String("oauthCredentials") != "" {
+		credsPath = args.String("oauthCrendentials")
+	}
+	clientId, clientSecret, err := getOauthAppCredentials(credsPath)
+	if err != nil {
+		ExitF("Failed to load oauth app credentials:")
+	}
+
 	if args.String("refreshToken") != "" && args.String("accessToken") != "" {
 		ExitF("Access token not needed when refresh token is provided")
 	}
 
 	if args.String("refreshToken") != "" {
-		return auth.NewRefreshTokenClient(ClientId, ClientSecret, args.String("refreshToken")), nil
+		return auth.NewRefreshTokenClient(clientId, clientSecret, args.String("refreshToken")), nil
 	}
 
 	if args.String("accessToken") != "" {
-		return auth.NewAccessTokenClient(ClientId, ClientSecret, args.String("accessToken")), nil
+		return auth.NewAccessTokenClient(clientId, clientSecret, args.String("accessToken")), nil
 	}
-
-	configDir := getConfigDir(args)
 
 	if args.String("serviceAccount") != "" {
 		serviceAccountPath := ConfigFilePath(configDir, args.String("serviceAccount"))
@@ -366,7 +400,7 @@ func getOauthClient(args cli.Arguments) (*http.Client, error) {
 	}
 
 	tokenPath := ConfigFilePath(configDir, TokenFilename)
-	return auth.NewFileSourceClient(ClientId, ClientSecret, tokenPath, authCodePrompt)
+	return auth.NewFileSourceClient(clientId, clientSecret, tokenPath, authCodePrompt)
 }
 
 func getConfigDir(args cli.Arguments) string {
