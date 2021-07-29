@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -346,8 +347,8 @@ func aboutExportHandler(ctx cli.Context) {
 func getOauthAppCredentials(credsPath string) (clientId, clientSecret string, err error) {
 	clientId = ClientId
 	clientSecret = ClientSecret
-	if _, err := os.Stat(credsPath); os.IsNotExist(err) {
-		return "", "", err
+	if _, err := os.Stat(credsPath); errors.Is(err, os.ErrNotExist) {
+		return clientId, clientSecret, nil
 	}
 	var oauthCredentials struct {
 		Installed struct {
