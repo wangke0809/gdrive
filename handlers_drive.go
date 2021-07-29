@@ -370,12 +370,9 @@ func getOauthClient(args cli.Arguments) (*http.Client, error) {
 	configDir := getConfigDir(args)
 
 	credsPath := ConfigFilePath(configDir, OauthCredentialsFilename)
-	if args.String("oauthCredentials") != "" {
-		credsPath = args.String("oauthCrendentials")
-	}
 	clientId, clientSecret, err := getOauthAppCredentials(credsPath)
 	if err != nil {
-		ExitF("Failed to load oauth app credentials:")
+		ExitF("Failed to load oauth app credentials: %s", err)
 	}
 
 	if args.String("refreshToken") != "" && args.String("accessToken") != "" {
