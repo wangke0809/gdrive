@@ -19,7 +19,7 @@ var ClientId string
 var ClientSecret string
 
 const TokenFilename = "token_v2.json"
-const OauthCredentialsFilename = "oauthClient.json"
+const OauthCredentialsFilename = "oauth_client.json"
 const DefaultCacheFileName = "file_cache.json"
 
 func listHandler(ctx cli.Context) {
