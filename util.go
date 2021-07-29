@@ -12,7 +12,7 @@ import (
 )
 
 func GetDefaultConfigDir() string {
-	return filepath.Join(xdg.ConfigHome, ".gdrive")
+	return filepath.Join(xdg.ConfigHome, "gdrive")
 }
 
 func ConfigFilePath(basePath, name string) string {
