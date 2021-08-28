@@ -3,14 +3,16 @@ module github.com/msfjarvis/gdrive
 go 1.16
 
 require (
-	cloud.google.com/go v0.88.0 // indirect
-	github.com/adrg/xdg v0.3.3 // indirect
+	cloud.google.com/go v0.93.3 // indirect
+	github.com/adrg/xdg v0.3.3
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
+	github.com/googleapis/gax-go/v2 v2.1.0 // indirect
 	github.com/sabhiram/go-gitignore v0.0.0-20201211210132-54b8a0bf510f
 	github.com/soniakeys/graph v0.0.0
-	github.com/stretchr/testify v1.7.0 // indirect
-	golang.org/x/net v0.0.0-20210716203947-853a461950ff
-	golang.org/x/oauth2 v0.0.0-20210628180205-a41e5a781914
-	google.golang.org/api v0.51.0
-	google.golang.org/genproto v0.0.0-20210722135532-667f2b7c528f // indirect
+	golang.org/x/net v0.0.0-20210825183410-e898025ed96a
+	golang.org/x/oauth2 v0.0.0-20210819190943-2bc19b11175f
+	golang.org/x/sys v0.0.0-20210823070655-63515b42dcdf // indirect
+	golang.org/x/text v0.3.7 // indirect
+	google.golang.org/api v0.54.0
+	google.golang.org/genproto v0.0.0-20210828152312-66f60bf46e71 // indirect
 )
