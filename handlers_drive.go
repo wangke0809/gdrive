@@ -344,25 +344,21 @@ func aboutExportHandler(ctx cli.Context) {
 	checkErr(err)
 }
 
-func getOauthAppCredentials(credsPath string) (clientId, clientSecret string, err error) {
-	clientId = ClientId
-	clientSecret = ClientSecret
+func getOauthAppCredentials(credsPath string) (clientId string, clientSecret string, err error) {
 	if _, err := os.Stat(credsPath); errors.Is(err, os.ErrNotExist) {
-		return clientId, clientSecret, nil
+		return ClientId, ClientSecret, nil
 	}
 	var oauthCredentials struct {
-		Installed struct {
-			ClientId     string `json:"client_id"`
-			ClientSecret string `json:"client_secret"`
-		} `json:"installed"`
+		ClientId     string `json:"client_id"`
+		ClientSecret string `json:"client_secret"`
 	}
 	content, err := ioutil.ReadFile(credsPath)
 	if err != nil {
 		return "", "", err
 	}
 	json.Unmarshal(content, &oauthCredentials)
-	clientId = oauthCredentials.Installed.ClientId
-	clientSecret = oauthCredentials.Installed.ClientSecret
+	clientId = oauthCredentials.ClientId
+	clientSecret = oauthCredentials.ClientSecret
 
 	return clientId, clientSecret, nil
 }
