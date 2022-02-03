@@ -2,6 +2,6 @@
 
 pkgs.mkShell {
   buildInputs = with pkgs; [
-    go goimports gopls git
+    direnv go goimports gopls git
   ];
 }
