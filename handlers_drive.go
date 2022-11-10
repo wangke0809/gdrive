@@ -62,6 +62,7 @@ func downloadHandler(ctx cli.Context) {
 		Delete:    args.Bool("delete"),
 		Recursive: args.Bool("recursive"),
 		Stdout:    args.Bool("stdout"),
+		Quiet:     args.Bool("quiet"),
 		Progress:  progressWriter(args.Bool("noProgress")),
 		Timeout:   durationInSeconds(args.Int64("timeout")),
 	})
