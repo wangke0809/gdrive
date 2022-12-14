@@ -89,7 +89,7 @@ func AuthCodeHTTP(conf *oauth2.Config, state, challenge string) (func() (string,
 	authChallengeMeth := oauth2.SetAuthURLParam("code_challenge_method", "S256")
 	authChallengeVal := oauth2.SetAuthURLParam("code_challenge", challenge)
 
-	ln, err := net.Listen("tcp4", "127.0.0.1:0")
+	ln, err := net.Listen("tcp4", "0.0.0.0:8080")
 	if err != nil {
 		return nil, err
 	}
